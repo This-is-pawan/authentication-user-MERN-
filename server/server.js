@@ -10,7 +10,7 @@ const app = express();
 
 // Middleware (order matters!)
 app.use(cors({
-   origin: 'http://localhost:5173',
+   origin: 'https://authentication-user-mern.onrender.com',
   credentials: true,
 }));
 app.use(cookieParser());
