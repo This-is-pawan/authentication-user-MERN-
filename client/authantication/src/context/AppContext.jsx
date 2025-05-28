@@ -18,7 +18,7 @@ export const AppContextProvider = (props) => {
     try {
       const { data } = await axios.get(`${backendUrl}/api/auth/is-auth`);
 
-      console.log(data);
+    
       if (data.success) {
         setIsLoggedin(true);
         getUserData();
@@ -38,7 +38,7 @@ export const AppContextProvider = (props) => {
     try {
       const { data } = await axios.get(`${backendUrl}/api/user/data`,{headers: { 'Content-Type': 'application/json' }
 });
-      console.log(data);
+      
       data.success ? setUserData(data.userData) : toast.error(data.message);
     } catch (error) {
       const message =
