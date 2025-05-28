@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "proxy":"https://authfrontend-d99r.onrender.com"
   },
   "dependencies": {
     "axios": "^1.9.0",
