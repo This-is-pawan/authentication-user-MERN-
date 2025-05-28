@@ -69,7 +69,7 @@ const EmailVerify = () => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-blue-200 to-purple-400">
       <img
-        src={assets.logo}
+        src={`${backendUrl}/assets.logo`}
         alt="logo"
         className="absolute left-5 sm:left-20 top-5 w-28 sm:w-32 cursor-pointer"
         onClick={() => navigate("/")}
