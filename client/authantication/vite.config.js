@@ -9,7 +9,7 @@ plugins: [react()],
       // This means: requests starting with /api will be forwarded to localhost:4000
       '/api': {
         // target: 'https://authbackend-acbf.onrender.com', // your backend URL
-        target: 'https://authfrontend-d99r.onrender.com', // your backend URL
+        target: 'http://localhost:3000', // your backend URL
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
       },
