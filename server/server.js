@@ -13,7 +13,7 @@ const app = express();
 //    origin: 'https://authentication-user-mern.onrender.com',
 //   credentials: true,
 // }));
-const cors = require('cors');
+
 
 const allowedOrigins = [
   'http://localhost:5173', // for local dev
