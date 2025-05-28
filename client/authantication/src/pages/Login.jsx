@@ -74,7 +74,7 @@ const showpassword=()=>{
   return (
     <div className="flex justify-center items-center min-h-screen px-6 sm:px-0 bg-gradient-to-br from blue-200 to bg-purple-400">
       <img
-        src={assets.logo}
+        src={`${backendUrl}/assets.logo`}
         alt="logo"
         className="absolute lef-5 sm:left-20 top-5 w-28 sm:32 cursor-pointer "
         onClick={() => navigate("/")}
@@ -90,7 +90,7 @@ const showpassword=()=>{
           {/*username*/}
           {state === "Sign Up" && (
             <div className="mb-4 flex items-center gap-3 w-full px-5 py-2.5 rounded-full bg-[#333A5C] ">
-              <img src={assets.person_icon} alt="" className="cursor-not-allowed"/>
+              <img src={`${backendUrl}/assets.person_icon`} alt="" className="cursor-not-allowed"/>
               <input
                 type="text"
                 placeholder="Full Name "
@@ -106,7 +106,7 @@ const showpassword=()=>{
 
           {/*  mail*/}
           <div className="mb-4 flex items-center gap-3 w-full px-5 py-2.5 rounded-full bg-[#333A5C] ">
-            <img src={assets.mail_icon} alt="" className="cursor-not-allowed" />
+            <img src={`${backendUrl}/assets.mail_icon`} alt="" className="cursor-not-allowed" />
             <input
               type="email"
               placeholder="Email id "
@@ -120,7 +120,7 @@ const showpassword=()=>{
           </div>
           {/*password*/}
           <div className="mb-4 flex items-center gap-3 w-full px-5 py-2.5 rounded-full bg-[#333A5C] ">
-            <img src={assets.lock_icon} alt="" onClick={showpassword} className="cursor-pointer" />
+            <img src={`${backendUrl}/assets.lock_icon`} alt="" onClick={showpassword} className="cursor-pointer" />
             <input
               type={`${showpass ? "text":"password"}`}
               placeholder="Password "
