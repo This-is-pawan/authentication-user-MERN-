@@ -105,7 +105,7 @@ function ResetPassword() {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-blue-200 to-purple-400">
       <img
-        src={assets.logo}
+        src={`${backendUrl}/assets.logo`}
         alt="logo"
         className="absolute left-5 sm:left-20 top-5 w-28 sm:w-32 cursor-pointer"
         onClick={() => navigate("/")}
@@ -124,7 +124,7 @@ function ResetPassword() {
             Enter your Registered Email Address
           </p>
           <div className="mb-4 flex items-center gap-3 w-full px-5 py-2.5 rounded-full bg-[#333A5C] text-white">
-            <img src={assets.mail_icon} alt="" className="cursor-not-allowed" />
+            <img src={`${backendUrl}/assets.mail_icon`} alt="" className="cursor-not-allowed" />
             <input
               type="email"
               placeholder="Email id"
@@ -190,7 +190,7 @@ function ResetPassword() {
             Enter the new password below
           </p>
           <div className="mb-4 flex items-center gap-3 w-full px-5 py-2.5 rounded-full bg-[#333A5C] text-white">
-            <img src={assets.lock_icon} alt="" className="cursor-not-allowed" />
+            <img src={`${backendUrl}/assets.lock_icon`} alt="" className="cursor-not-allowed" />
             <input
               type="password"
               placeholder="Password"
