@@ -4,7 +4,7 @@ axios.interceptors.response.use(
   response => response,
   error => {
     if (error.response && error.response.status === 401) {
-      // Token is invalid or expired
+      // Token is invalid or expired      
       localStorage.removeItem('token');
       toast.error('Session expired. Please log in again.');
       window.location.href = '/login'; // or use navigate('/login') in React Router
