@@ -14,7 +14,7 @@ axios.interceptors.response.use(
 );
 ```
   ```js
-import jwtDecode from 'jwt-decode';
+import jwtDecode from 'jwt-decode';  
 
 const token = localStorage.getItem('token');
 if (token) {
