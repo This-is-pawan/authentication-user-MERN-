@@ -9,7 +9,7 @@ axios.interceptors.response.use(
       toast.error('Session expired. Please log in again.');
       window.location.href = '/login'; // or use navigate('/login') in React Router
     }
-    return Promise.reject(error);
+    return Promise.reject(error);        
   }
 );
 ```
